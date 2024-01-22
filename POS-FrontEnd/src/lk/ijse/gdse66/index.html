@@ -4,27 +4,22 @@
     <meta charset="UTF-8">
     <title>POS System</title>
     <meta content="width=device-width initial-scale=1" name="viewport">
-
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
     <!--    <link rel="stylesheet" href="../assets/css/bootstrap.css">-->
     <style>
         body{
             background-color: black;
         }
     </style>
-
-    <script src="assest/js/code.jquery.com_jquery-3.7.1.min.js"></script>
-    <script src="assest/bootstrap-5.3.2-dist/js/bootstrap.js"></script>
-    <script src="assest/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
-    <link rel="stylesheet" href="assest/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="assets/js/bootstrap.bundle.js"></script>
 
 
 </head>
-
 <body>
 <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Lasini POS System</a>
+            <a class="navbar-brand" href="#">Nethmi POS System</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -106,27 +101,27 @@
                 <div class="card border-success " style="max-width: 25rem; height: 480px;">
                     <div class="card-header text-white bg-success">Customer Form</div>
                     <div class="card-body m-3">
-                        <form>
+                        <form id="customerForm">
                             <div class="row mb-4 justify-content-center">
                                 <div class="mb-1">
                                     <label for="txtCustomerID">Customer ID</label>
-                                    <input class="form-control" id="txtCustomerID" name="txtCustomerID" required type="text">
+                                    <input name="txtCustomerID" class="form-control" id="txtCustomerID" required type="text">
                                     <span class="control-error" id="lblcusid"></span>
                                 </div>
                                 <div class="mb-1">
                                     <label for="txtCustomerName">Customer Name</label>
-                                    <input class="form-control" id="txtCustomerName" name="txtCustomerName" type="text">
+                                    <input name="txtCustomerName" class="form-control" id="txtCustomerName" type="text">
                                     <span class="control-error" id="lblcusname"></span>
                                 </div>
                                 <div class="mb-1">
                                     <label for="txtCustomerAddress">Customer Address</label>
-                                    <input class="form-control" id="txtCustomerAddress" name="txtCustomerAddress" type="text">
+                                    <input name="txtCustomerAddress" class="form-control" id="txtCustomerAddress" type="text">
                                     <span class="control-error" id="lblcusaddress"></span>
                                 </div>
                                 <div class="mb-1">
                                     <label for="txtCustomerContact">Customer Contact</label>
-                                    <input class="form-control" id="txtCustomerContact" name="txtCustomerContact" type="text">
-                                    <span class="control-error" id="lblcussalary"></span>
+                                    <input name="txtCustomerContact" class="form-control" id="txtCustomerContact" type="text">
+                                    <span class="control-error" id="lblcusContact"></span>
                                 </div>
                                 <div class="btn-group " role="group" aria-label="Basic example">
                                     <button id="btnCustomer" type="button" class="btn btn-danger" style="width: 100px">Save</button>
@@ -150,7 +145,7 @@
                         <th>Customer ID</th>
                         <th>Customer Name</th>
                         <th>Customer Address</th>
-                        <th>Customer Contact</th>
+                        <th>Customer Salary</th>
                     </tr>
                     </thead>
 
@@ -239,6 +234,7 @@
 
 <!-- order section -->
 <main id="orderManage">
+    <!--    <h2 style="margin: 20px"><i class="fa-solid fa-list-check"></i>   Order Manage</h2>-->
     <h2 style="margin: 20px"><i class="fa-solid fa-list-check"></i>   Order Manage</h2>
     <section class="mt-4 m-lg-4" >
         <div class="container text-center mb-3">
@@ -361,9 +357,12 @@
     </section>
 </main>
 
-
+<script src="assets/code.jquery.com_jquery-3.7.1.min.js"></script>
 <!--<script src="../assets/js/bootstrap.min.js"></script>-->
+<script src="assets/js/bootstrap.js"></script>
+
 <script src="controller/DashboradController.js"></script>
+<script src="controller/CustomerController.js"></script>
 <script>
 
 
