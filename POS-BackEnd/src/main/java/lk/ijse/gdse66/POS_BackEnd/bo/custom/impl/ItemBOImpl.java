@@ -17,7 +17,7 @@ public class ItemBOImpl implements ItemBO {
     @Override
     public boolean addItem(Connection connection, ItemDTO itemDTO) throws SQLException, ClassNotFoundException {
         Item item = new Item(
-                itemDTO.getItemCode(), itemDTO.getDescription(), itemDTO.getQtyOnHand(), itemDTO.getUnitPrice()
+                itemDTO.getCode(), itemDTO.getDescription(), itemDTO.getQtyOnHand(), itemDTO.getUnitPrice()
 
         );
         return itemDAO.add(item, connection);
@@ -31,7 +31,7 @@ public class ItemBOImpl implements ItemBO {
 
         for (Item temp : items) {
             ItemDTO itemDTO = new ItemDTO(
-                    temp.getItemCode(),temp.getDescription(),temp.getQtyOnHand(),temp.getUnitPrice()
+                    temp.getCode(),temp.getDescription(),temp.getQtyOnHand(),temp.getUnitPrice()
             );
 
             obList.add(itemDTO);
@@ -44,7 +44,7 @@ public class ItemBOImpl implements ItemBO {
         Item item = itemDAO.search(itemCode, connection);
 
         ItemDTO itemDTO = new ItemDTO(
-                item.getItemCode(),item.getDescription(),item.getQtyOnHand(),item.getUnitPrice()
+                item.getCode(),item.getDescription(),item.getQtyOnHand(),item.getUnitPrice()
         );
         return itemDTO;
     }
@@ -57,7 +57,7 @@ public class ItemBOImpl implements ItemBO {
     @Override
     public boolean updateItem(Connection connection, ItemDTO itemDTO) throws SQLException, ClassNotFoundException {
         Item item = new Item(
-                itemDTO.getItemCode(),itemDTO.getDescription(),itemDTO.getQtyOnHand(),itemDTO.getUnitPrice()
+                itemDTO.getCode(),itemDTO.getDescription(),itemDTO.getQtyOnHand(),itemDTO.getUnitPrice()
 
         );
         return itemDAO.update(item,connection);

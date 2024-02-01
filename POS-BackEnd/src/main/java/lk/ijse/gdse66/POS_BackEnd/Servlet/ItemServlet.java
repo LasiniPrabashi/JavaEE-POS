@@ -98,7 +98,7 @@ public class ItemServlet extends HttpServlet {
                     ItemDTO itemDTO1 = itemBO.searchItem(code, connection);
                     JsonObjectBuilder objectBuilder1 = Json.createObjectBuilder();
 
-                    objectBuilder1.add("itemCode", itemDTO1.getItemCode());
+                    objectBuilder1.add("itemCode", itemDTO1.getCode());
                     objectBuilder1.add("name", itemDTO1.getDescription());
                     objectBuilder1.add("qtyOnHand", itemDTO1.getQtyOnHand());
                     objectBuilder1.add("price", itemDTO1.getUnitPrice());
@@ -115,7 +115,7 @@ public class ItemServlet extends HttpServlet {
                     for (ItemDTO itemDTO : allItems) {
 
                         JsonObjectBuilder objectBuilder = Json.createObjectBuilder();
-                        objectBuilder.add("itemCode", itemDTO.getItemCode());
+                        objectBuilder.add("itemCode", itemDTO.getCode());
                         objectBuilder.add("itemName", itemDTO.getDescription());
                         objectBuilder.add("itemQty", itemDTO.getQtyOnHand());
                         objectBuilder.add("itemPrice", itemDTO.getUnitPrice());
@@ -138,7 +138,7 @@ public class ItemServlet extends HttpServlet {
         }
     }
 
-   /* @Override
+    @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         JsonReader reader = Json.createReader(req.getReader());
         JsonObject jsonObject = reader.readObject();
@@ -181,7 +181,44 @@ public class ItemServlet extends HttpServlet {
             writer.print(objectBuilder.build());
             e.printStackTrace();
         }
-    }*/
+    }
+
+    @Override
+    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String itemCode = req.getParameter("txtItemId");
+        PrintWriter writer = resp.getWriter();
+        resp.setContentType("application/json");
+        resp.addHeader("Access-Control-Allow-Origin", "*");
+
+        try {
+            Connection connection = dataSource.getConnection();
+
+            if (itemBO.deleteItem(connection, itemCode)) {
+                JsonObjectBuilder objectBuilder = Json.createObjectBuilder();
+                objectBuilder.add("status", 200);
+                objectBuilder.add("data", "");
+                objectBuilder.add("message", "Successfully Deleted");
+                writer.print(objectBuilder.build());
+            } else {
+                JsonObjectBuilder objectBuilder = Json.createObjectBuilder();
+                objectBuilder.add("status", 400);
+                objectBuilder.add("data", "Wrong Id Inserted");
+                objectBuilder.add("message", "");
+                writer.print(objectBuilder.build());
+            }
+
+            connection.close();
+
+        } catch (SQLException | ClassNotFoundException e) {
+            resp.setStatus(200);
+            JsonObjectBuilder objectBuilder = Json.createObjectBuilder();
+            objectBuilder.add("status", 500);
+            objectBuilder.add("message", "Error");
+            objectBuilder.add("data", e.getLocalizedMessage());
+            writer.print(objectBuilder.build());
+            e.printStackTrace();
+        }
+    }
 
     @Override
     protected void doOptions(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

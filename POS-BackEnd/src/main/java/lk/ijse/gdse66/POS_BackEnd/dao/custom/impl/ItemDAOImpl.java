@@ -14,19 +14,19 @@ public class ItemDAOImpl implements ItemDAO{
 
     @Override
     public boolean add(Item item, Connection connection) throws SQLException, ClassNotFoundException {
-        return CrudUtil.executeUpdate(connection,"INSERT INTO Item VALUES(?,?,?,?)",item.getItemCode(),
+        return CrudUtil.executeUpdate(connection,"INSERT INTO Item VALUES(?,?,?,?)",item.getCode(),
                 item.getDescription(),item.getQtyOnHand(),item.getUnitPrice());
     }
 
     @Override
     public boolean delete(String itemCode, Connection connection) throws SQLException, ClassNotFoundException {
-        return CrudUtil.executeUpdate(connection,"DELETE FROM Item WHERE itemCode=?", itemCode);
+        return CrudUtil.executeUpdate(connection,"DELETE FROM item WHERE code=?", itemCode);
     }
 
     @Override
     public boolean update(Item item, Connection connection) throws SQLException, ClassNotFoundException {
-        return CrudUtil.executeUpdate(connection, "UPDATE Item SET name=?,qtyOnHand=?,price=? WHERE itemCode=?",item.getDescription(),
-                item.getQtyOnHand(),item.getUnitPrice(),item.getItemCode());
+        return CrudUtil.executeUpdate(connection, "UPDATE item SET description=?,qtyOnHand=?,unitPrice=? WHERE code=?",item.getDescription(),
+                item.getQtyOnHand(),item.getUnitPrice(),item.getCode());
     }
 
     @Override
