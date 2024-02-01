@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <title>POS System</title>
     <meta content="width=device-width initial-scale=1" name="viewport">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <!--    <link rel="stylesheet" href="../assets/css/bootstrap.css">-->
+
     <style>
         body{
             background-color: black;
         }
     </style>
-    <script src="assets/js/bootstrap.bundle.js"></script>
+
+    <link rel="stylesheet" href="assest/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="assest/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="assest/code.jquery.com_jquery-3.7.1.min.js"></script>
 
 
 </head>
@@ -19,7 +21,7 @@
 <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Nethmi POS System</a>
+            <a class="navbar-brand" href="#">Lasini POS System</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -127,10 +129,11 @@
                                     <button id="btnCustomer" type="button" class="btn btn-danger" style="width: 100px">Save</button>
                                     <button id="btnUpdate"type="button" class="btn btn-warning" style="width: 100px">Update</button>
                                     <button id="btnDelete" type="button" class="btn btn-success" style="width: 100px">Delete</button>
+                                    <button id="btnGetAllCustomer" type="button" class="btn btn-warning" style="width: 100px">GetAll</button>
                                 </div>
                                 <div class="btn-group m-3" role="group" aria-label="Basic example">
-                                    <button id="btnCustGetAll" type="button" class="btn btn-warning" style="width: 100px">GetAll</button>
-                                    <button id="btnClear"type="button" class="btn btn-success" style="width: 100px">Clear</button>
+<!--                                    <button id="btnGetAllCustomer" type="button" class="btn btn-warning" style="width: 100px">GetAll</button>-->
+<!--                                    <button id="btnClear"type="button" class="btn btn-success" style="width: 100px">Clear</button>-->
                                 </div>
                             </div>
                         </form>
@@ -149,7 +152,7 @@
                     </tr>
                     </thead>
 
-                    <tbody id="tblCustomer">
+                    <tbody id="customerTable">
 
                     </tbody>
                 </table>
@@ -357,17 +360,13 @@
     </section>
 </main>
 
-<script src="assets/code.jquery.com_jquery-3.7.1.min.js"></script>
-<!--<script src="../assets/js/bootstrap.min.js"></script>-->
-<script src="assets/js/bootstrap.js"></script>
 
-<script src="controller/DashboradController.js"></script>
+
+<script src="assest/bootstrap-5.3.2-dist/js/bootstrap.js"></script>
+<script src="controller/DashboardController.js"></script>
 <script src="controller/CustomerController.js"></script>
-<script>
 
 
-
-</script>
 
 
 

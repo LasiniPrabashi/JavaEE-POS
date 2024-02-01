@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="POS-BackEnd-1.0-SNAPSHOT.war">
+    <root id="archive" name="POS-BackEnd-1.0.0.war">
       <element id="artifact" artifact-name="POS-BackEnd:war exploded" />
     </root>
   </artifact>

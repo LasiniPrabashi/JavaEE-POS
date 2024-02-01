@@ -6,7 +6,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class CrudUtil {
-
     private static PreparedStatement getPreparedStatement(Connection connection, String sql, Object... args) throws SQLException, ClassNotFoundException {
         PreparedStatement pstm = connection.prepareStatement(sql);
         for (int i = 0; i < args.length; i++) {

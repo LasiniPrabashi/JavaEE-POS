@@ -1,9 +1,9 @@
 package lk.ijse.gdse66.POS_BackEnd.bo;
 
+
 import lk.ijse.gdse66.POS_BackEnd.bo.custom.impl.CustomerBOImpl;
 
 public class BOFactory {
-
     private static BOFactory boFactory;
 
     private BOFactory(){
@@ -17,7 +17,7 @@ public class BOFactory {
         return  boFactory;
     }
 
-    public SuperBo getBO(BOTypes types){
+    public SuperBO getBO(BOTypes types){
         switch (types){
             case CUSTOMER:
                 return new CustomerBOImpl();

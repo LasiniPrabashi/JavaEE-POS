@@ -1,5 +1,6 @@
 package lk.ijse.gdse66.POS_BackEnd.dto;
 
+import jdk.jfr.DataAmount;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,8 +9,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CustomerDTO {
-    private String id;
-    private String name;
-    private String address;
-    private String contact;
+    private String cusId;
+    private String cusName;
+    private String cusAddress;
+    private String cusContact;
 }
