@@ -57,6 +57,64 @@ function loadAllItem() {
     });
 }
 
+$("#btnItemUpdate").click(function (){
+    let itemOb = {
+        itemCode: $("#txtItemId").val(),
+        itemName: $("#txtItemName").val(),
+        itemQty: $("#txtQty").val(),
+        itemPrice: $("#txtPrice").val()
+    };
+    $.ajax({
+        url: "http://localhost:8080/backEnd/item",
+        method: "PUT",
+        contentType: "application/json",
+        data: JSON.stringify(itemOb),
+        success: function (res){
+            if (res.status == 200){
+                alert(res.message);
+                resetItem();
+                loadAllItem();
+            } else if (res.status == 400){
+                alert(res.message);
+            } else {
+                alert(res.data);
+            }
+        },
+        error: function (ob, errorStus) {
+            console.log(ob);
+            console.log(errorStus);
+        }
+    });
+});
+
+$("#btnItemDelete").click(function (){
+    let itemCode = $("#txtItemId").val();
+
+    $.ajax({
+        url: "http://localhost:8080/backEnd/item?txtItemId=" + itemCode,
+        method: "DELETE",
+
+        success: function (res) {
+            console.log(res);
+            if (res.status == 200) {
+                alert(res.message);
+                resetItem();
+                loadAllItem();
+            } else if (res.status == 400) {
+                alert(res.data);
+            } else {
+                alert(res.data);
+            }
+
+        },
+        error: function (ob, status, t) {
+            console.log(ob);
+            console.log(status);
+            console.log(t);
+        }
+    });
+});
+
 function bindClickEvent() {
     $("#itemTable>tr").click(function () {
         let id = $(this).children().eq(0).text();

@@ -2,31 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee3bb309-e6a7-4db3-8713-015d552741dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../POS-BackEnd/src/main/java/lk/ijse/gdse66/POS_BackEnd/Servlet/ItemServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POS-BackEnd/src/main/java/lk/ijse/gdse66/POS_BackEnd/bo/custom/ItemBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POS-BackEnd/src/main/java/lk/ijse/gdse66/POS_BackEnd/bo/custom/impl/ItemBOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lk/ijse/gdse66/controller/ItemController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../POS-BackEnd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../POS-BackEnd/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POS-BackEnd/src/main/java/lk/ijse/gdse66/POS_BackEnd/bo/BOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POS-BackEnd/src/main/java/lk/ijse/gdse66/POS_BackEnd/bo/BOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POS-BackEnd/src/main/java/lk/ijse/gdse66/POS_BackEnd/dao/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POS-BackEnd/src/main/java/lk/ijse/gdse66/POS_BackEnd/dao/DAOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POS-BackEnd/src/main/java/lk/ijse/gdse66/POS_BackEnd/dao/custom/ItemDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POS-BackEnd/src/main/java/lk/ijse/gdse66/POS_BackEnd/dao/custom/ItemDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POS-BackEnd/src/main/java/lk/ijse/gdse66/POS_BackEnd/Servlet/ItemServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POS-BackEnd/src/main/java/lk/ijse/gdse66/POS_BackEnd/Servlet/ItemServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POS-BackEnd/src/main/java/lk/ijse/gdse66/POS_BackEnd/bo/custom/impl/ItemBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POS-BackEnd/src/main/java/lk/ijse/gdse66/POS_BackEnd/bo/custom/impl/ItemBOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../POS-BackEnd/src/main/java/lk/ijse/gdse66/POS_BackEnd/dao/custom/impl/ItemDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POS-BackEnd/src/main/java/lk/ijse/gdse66/POS_BackEnd/dao/custom/impl/ItemDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../POS-BackEnd/src/main/java/lk/ijse/gdse66/POS_BackEnd/dto/ItemDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POS-BackEnd/src/main/java/lk/ijse/gdse66/POS_BackEnd/dto/ItemDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../POS-BackEnd/src/main/java/lk/ijse/gdse66/POS_BackEnd/entity/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POS-BackEnd/src/main/java/lk/ijse/gdse66/POS_BackEnd/entity/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POS-BackEnd/target/POS-BackEnd-1.0.0/WEB-INF/classes/lk/ijse/gdse66/POS_BackEnd/bo/BOFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POS-BackEnd/target/POS-BackEnd-1.0.0/WEB-INF/classes/lk/ijse/gdse66/POS_BackEnd/bo/BOFactory$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POS-BackEnd/target/POS-BackEnd-1.0.0/WEB-INF/classes/lk/ijse/gdse66/POS_BackEnd/bo/BOFactory$BOTypes.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POS-BackEnd/target/POS-BackEnd-1.0.0/WEB-INF/classes/lk/ijse/gdse66/POS_BackEnd/bo/BOFactory$BOTypes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POS-BackEnd/target/POS-BackEnd-1.0.0/WEB-INF/classes/lk/ijse/gdse66/POS_BackEnd/bo/BOFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POS-BackEnd/target/POS-BackEnd-1.0.0/WEB-INF/classes/lk/ijse/gdse66/POS_BackEnd/bo/BOFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POS-BackEnd/target/POS-BackEnd-1.0.0/WEB-INF/classes/lk/ijse/gdse66/POS_BackEnd/dao/DAOFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POS-BackEnd/target/POS-BackEnd-1.0.0/WEB-INF/classes/lk/ijse/gdse66/POS_BackEnd/dao/DAOFactory$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POS-BackEnd/target/POS-BackEnd-1.0.0/WEB-INF/classes/lk/ijse/gdse66/POS_BackEnd/dao/DAOFactory$DAOTypes.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POS-BackEnd/target/POS-BackEnd-1.0.0/WEB-INF/classes/lk/ijse/gdse66/POS_BackEnd/dao/DAOFactory$DAOTypes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POS-BackEnd/target/POS-BackEnd-1.0.0/WEB-INF/classes/lk/ijse/gdse66/POS_BackEnd/dao/DAOFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POS-BackEnd/target/POS-BackEnd-1.0.0/WEB-INF/classes/lk/ijse/gdse66/POS_BackEnd/dao/DAOFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POS-BackEnd/target/classes/lk/ijse/gdse66/POS_BackEnd/bo/BOFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POS-BackEnd/target/classes/lk/ijse/gdse66/POS_BackEnd/bo/BOFactory$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POS-BackEnd/target/classes/lk/ijse/gdse66/POS_BackEnd/bo/BOFactory$BOTypes.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POS-BackEnd/target/classes/lk/ijse/gdse66/POS_BackEnd/bo/BOFactory$BOTypes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POS-BackEnd/target/classes/lk/ijse/gdse66/POS_BackEnd/bo/BOFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POS-BackEnd/target/classes/lk/ijse/gdse66/POS_BackEnd/bo/BOFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POS-BackEnd/target/classes/lk/ijse/gdse66/POS_BackEnd/dao/DAOFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POS-BackEnd/target/classes/lk/ijse/gdse66/POS_BackEnd/dao/DAOFactory$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POS-BackEnd/target/classes/lk/ijse/gdse66/POS_BackEnd/dao/DAOFactory$DAOTypes.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POS-BackEnd/target/classes/lk/ijse/gdse66/POS_BackEnd/dao/DAOFactory$DAOTypes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POS-BackEnd/target/classes/lk/ijse/gdse66/POS_BackEnd/dao/DAOFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POS-BackEnd/target/classes/lk/ijse/gdse66/POS_BackEnd/dao/DAOFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lk/ijse/gdse66/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/lk/ijse/gdse66/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lk/ijse/gdse66/controller/ItemController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lk/ijse/gdse66/controller/ItemController.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +41,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/lk/ijse/gdse66/assest" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.19504644" />
@@ -92,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1706686141350</updated>
       <workItem from="1706686143100" duration="16036000" />
-      <workItem from="1706763210620" duration="8971000" />
+      <workItem from="1706763210620" duration="12030000" />
     </task>
     <servers />
   </component>
