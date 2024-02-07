@@ -5,7 +5,6 @@ import javafx.collections.ObservableList;
 import lk.ijse.gdse66.POS_BackEnd.dao.CrudUtil;
 import lk.ijse.gdse66.POS_BackEnd.dao.custom.ItemDAO;
 import lk.ijse.gdse66.POS_BackEnd.entity.Item;
-
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -31,7 +30,7 @@ public class ItemDAOImpl implements ItemDAO{
 
     @Override
     public Item search(String code, Connection connection) throws SQLException, ClassNotFoundException {
-        ResultSet rst = CrudUtil.executeQuery(connection,"SELECT * FROM Item WHERE itemCode=?",code);
+        ResultSet rst = CrudUtil.executeQuery(connection,"SELECT * FROM Item WHERE Code=?",code);
         if (rst.next()){
             return new Item(
                     rst.getString(1),
