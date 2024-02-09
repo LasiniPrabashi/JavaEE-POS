@@ -10,7 +10,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class OrderDAOImpl implements OrderDAO {
+public class OrderDAOImpl implements OrderDAO{
 
     @Override
     public boolean add(Orders orders, Connection connection) throws SQLException,ClassNotFoundException{

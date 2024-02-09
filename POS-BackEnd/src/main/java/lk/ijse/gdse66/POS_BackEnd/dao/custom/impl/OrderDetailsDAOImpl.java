@@ -57,8 +57,7 @@ public class OrderDetailsDAOImpl implements OrderDetailsDAO {
 
     @Override
     public ArrayList<OrderDetails> searchOrderDetail(String oId, Connection connection) throws SQLException, ClassNotFoundException {
-        ResultSet rst = CrudUtil.executeQuery(connection,"SELECT * FROM orderdetails WHERE oid =?",oId
-        );
+        ResultSet rst = CrudUtil.executeQuery(connection,"SELECT * FROM orderdetails WHERE oid =?",oId);
         ArrayList<OrderDetails> orderDetails = new ArrayList<>();
         while (rst.next()){
             orderDetails.add(new OrderDetails(

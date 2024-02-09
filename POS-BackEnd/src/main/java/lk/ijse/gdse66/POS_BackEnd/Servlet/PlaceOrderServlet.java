@@ -66,7 +66,7 @@ public class PlaceOrderServlet extends HttpServlet {
                 case "GETID":
 
                     JsonObjectBuilder jsonObjectBuilder = Json.createObjectBuilder();
-                    jsonObjectBuilder.add("orderId", orderBO.generateNewOrderId(connection));
+                    jsonObjectBuilder.add("oid", orderBO.generateNewOrderId(connection));
                     writer.print(jsonObjectBuilder.build());
 
                     break;
